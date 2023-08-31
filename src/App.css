@@ -1,84 +1,101 @@
-.container {
-  margin: 50px 30px 10px 100px;
+
+.box1{
+  margin: 20px 10px 10px 10px;
   padding: 10px 10px 10px 10px;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  height: 400px;
-  overflow: hidden;
 }
-.card-img-top {
-  height: 400px;
-  width: 350px;
+
+.container {
+  display: flex;
+  margin: 0px 30px 0px 100px;
   overflow: hidden;
 }
 
-.card-body {
+.card-img-top {
   height: 400px;
-  width: 350px;
-  overflow: hidden;
+  width: 100%;
+ 
+  object-fit: cover; 
 }
+
+.card-body {
+  padding: 20px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
 .card-text {
   height: 300px;
   width: 200px;
   overflow: hidden;
 }
 
-.rectangle1,
-.rectangle2,
-.rectangle3 {
-  width: 100px;
-  height: 100px;
-  background: red;
-  margin: 10px;
+.card-text {
+  height: 300px;
+  width: 200px;
+  overflow: hidden;
+  flex: 1;
 }
 
 .card {
-  margin: 10px 10px 10px 10px;
-  padding: 0px 0px 0px 0px;
-  width: 18rem;
+  flex: 1;
+  margin: 0 0px; /* Adjusted margin to reduce space between cards */
+  padding: 0;
   display: flex;
   flex-direction: column;
   background-color: white;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  margin: 10px;
-}
-
-.content {
-  padding: 20px;
+  box-shadow: 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .Footer {
-  height: 40px;
-  background-color: #e2c9c9;
-  color: white;
-  text-align: center;
   padding: 10px;
+  margin: 50px 0px 0px;
+  color: rgb(245, 236, 236);
+  height: 50px;
+  background-color: #000000;
+  text-align: center;
 }
+
+
 @media (max-width: 500px) {
   /* Styles for smaller screens (phones) */
   .container {
-    margin: 1px 1px 1px 0px;
-    padding: 10px 10px 10px 10px;
-    display: flex;
+    margin: 1px;
     flex-direction: column;
     align-items: center;
-    height: 1000px;
-    overflow: hidden;
+    height: auto;
   }
   .card {
     height: 1000px;
-    margin: 10px 10px 10px 1px;
-    padding: 0px 0px 0px 0px;
     width: 18rem;
     display: flex;
     overflow: hidden;
     flex-direction: column;
     background-color: white;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
   }
   .row {
     display: flex;
     flex-direction: column;
+  }
+  .card-img-top {
+    height: 500px;
+    width: 350px;
+    border-radius: 1%;
+    overflow: hidden;
+  }
+  
+  .card-body {
+    height: 400px;
+    width: 350px;
+    overflow: hidden;
+  }
+  .Footer {
+    padding: 10px;
+    margin: 50px 0px 0px;
+    color: rgb(245, 236, 236);
+    height: 50px;
+    background-color: #000000;
+    text-align: center;
   }
 }
