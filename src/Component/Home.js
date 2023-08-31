@@ -3,6 +3,7 @@ import React from 'react'
 function Home() {
   return (
     <>
+    <p className='box1'></p>
       <div className="container">
         <div className="card" >
           <img src="https://images.unsplash.com/photo-1580618672591-eb180b1a973f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8aGFpciUyMHNhbG9ufGVufDB8fDB8fHww&w=1000&q=80" className="card-img-top" alt="..." />
@@ -20,7 +21,6 @@ function Home() {
 
         </div>
         <div className="card" >
-
           <div className="card-body">
             <h5 className="card-title">HAIRCUT</h5>
             <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
